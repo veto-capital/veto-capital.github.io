@@ -1,1 +1,179 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Veto Capital</title>
+    <link rel="shortcut icon" type="image/png" href="assets/fav.png">
+    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/font-awesome.min.css">
+    <script src="assets/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body onload="onload()">
+
+    <div class="blink">
+      <div class="upper brow"></div>
+      <div class="lid"></div>
+      <div class="lower brow"></div>
+      <div class="eye"></div>
+    </div>
+
+    <div class="logo">
+      <img src="assets/logo.png">
+      <i class="scroller fa fa-chevron-down"
+        onclick="scrollDown()"></i>
+    </div>
+
+    <!--div class="teaser">coming soon</div-->
+
+    <div class="about">
+      <h2>About</h2>
+      <p>
+        Veto Capital is a berlin based investment collective, helping entrepreneurs
+        to build their companies. It does so by adding money and knowledge
+        in the very early stages.
+      </p>
+      <p>
+        Its members not only provide the investment, but also
+        experience in finance and legal matters, in setting up teams and scaling
+        them, in product and project management and in selecting and incorporating
+        the right technologies.
+      </p>
+      <p>
+        Veto Capital focuses on IT, Advertising and AdTech, but also invests in
+        other industries.
+      </p>
+    </div>
+
+    <div class="team">
+      <h2>Team</h2>
+      <hr>
+      <p>
+        There’s a reason startups are driving so much innovation today. It's about the
+        people. And money. At the right point. We offer both, money and people: smart,
+        qualified, motivated business angels who are easy to collaborate and communicate
+        with. Here’s a small look at who we are and what we have done so far.
+      </p>
+
+      <ol class="members">
+        <li class="member" onmouseenter="switchTo(0)">
+          <div class="overlay"></div>
+          <i class="fa fa-linkedin"></i><label>Thomas Hille</label>
+          <a href="https://www.linkedin.com/in/hille/" target="_blank">
+            <img src="assets/th.jpg">
+          </a>
+        </li>
+        <li class="member" onmouseenter="switchTo(1)">
+          <div class="overlay"></div>
+          <i class="fa fa-linkedin"></i><label>David Henkensiefken</label>
+          <a href="https://www.linkedin.com/in/david-henkensiefken-84592283/" target="_blank">
+            <img src="assets/dh.jpg">
+          </a>
+        </li>
+        <li class="member" onmouseenter="switchTo(2)">
+          <div class="overlay"></div>
+          <i class="fa fa-linkedin"></i><label>Benjamin Rabinowitsch</label>
+          <a href="https://www.linkedin.com/in/benjaminrabinowitsch/" target="_blank">
+            <img src="assets/br.jpg">
+          </a>
+        </li>
+        <li class="member" onmouseenter="switchTo(3)">
+          <div class="overlay"></div>
+          <i class="fa fa-linkedin"></i><label>Philipp Simon</label>
+          <a href="https://www.linkedin.com/in/philipp-simon-45962a62/" target="_blank">
+            <img src="assets/ps.jpg">
+          </a>
+        </li>
+        <li class="member" onmouseenter="switchTo(4)">
+          <div class="overlay"></div>
+          <i class="fa fa-linkedin"></i><label>Benjamin Schönburg</label>
+          <a href="https://www.linkedin.com/in/benjamin-schönburg/" target="_blank">
+            <img src="assets/bs.jpg">
+          </a>
+        </li>
+      </ol>
+      <div id="indicator" class="m0"></div>
+
+      <div class="infos">
+        <i class="fa fa-chevron-left" onclick="step(-1)"></i>
+        <ol>
+          <li class="info hidden" id="th">
+            <h2>Thomas Hille</h2>
+            <p>
+              Thomas is Founder and Managing Director of LiquidM, a Start-up in the Mobile
+              Advertising Technology Industry, which was sold to Bertelsmann SE & CO KGaA in 2016.
+              Before becoming founding LiquidM and selling the Company successfully, he founded
+              Madvertise GmbH, one of the first Mobile Advertising Companies in Germany and Artmesh,
+              a platform for art lovers. Thomas studied IT-System-Engineering at the world famous
+              Hasso-Plattner Institute and is Tech savvy since he was born. At Veto-Capital, Thomas
+              provides companies with his broad Knowledge of leading Tech- and Product Teams as well
+              as creating new Products. As being a Serial Entrepreneur, he knows the Start-up scene
+              by heart and is happy to introduce you to the people that matters. Besides work, Thomas
+              loves eating tons of meat, drinking gazillions of Gin and playing 24/7 Computer Games.
+            </p>
+          </li>
+          <li class="info hidden" id="dh">
+            <h2>David Henkensiefken</h2>
+            <p>
+              David is Collaboration Counselour at Ligatus and former CTO of veeseo, a content
+              recommendation engine, which he started as a co-founder in 2010. The company was
+              sold 2014 to G+J (Bertelsman) and merged 2017 with Ligatus. Before that, he worked
+              at the Bremen located start-up mediaclipping as a Product Manager and Technical
+              Project Leader. David got his start in the digital industry at the beginning of the
+              90ies and worked in different IT companies with different roles, studied Media
+              informatics (BASc) and Digital Media (MS) and helps Veto Capital in questions about
+              IT, scouting IT-Teams and pitfalls and chances of being a start-up with a strong
+              focus on project-management.
+            </p>
+          </li>
+          <li class="info hidden" id="br">
+            <h2>Benjamin Rabinowitsch</h2>
+            <p>
+              Benjamin is responsible for the product development at LiquidM, a Start-up in the Mobile
+              Advertising Technology Industry. The company was sold to Bertelsmann SE & CO KGaA in 2016.
+              Before LiquidM, Benjamin was responsible for the product development at Madvertise GmbH,
+              one of the first Mobile Advertising Companies in Germany, sold to MNG in 2014. Benjamin
+              studied Computer Science at Ludwig-Maximilians-Universität in Munich, focussing on the areas
+              of human-computer-interaction and communication systems. Now he focuses on agile development
+              processes and analytics driven product development.
+            </p>
+          </li>
+          <li class="info hidden" id="ps">
+            <h2>Philipp Simon</h2>
+            <p>
+              Philipp is Managing Director and responsible for Sales & Technical Support at LiquidM, a
+              Start-up in the Mobile Advertising Technology Industry. The company was sold to Bertelsmann
+              SE & CO KGaA in 2016. Before becoming Managing Director and selling the Company successfully,
+              he joined Madvertise GmbH, one of the first Mobile Advertising Companies in Germany, as its
+              first employee and was supporting the CEO in all Finance and Legal matters. Philipp studied
+              Business Administration with focus on Entrepreneurship. At Veto-Capital, Philipp provides
+              companies with operational guidance in the fields of Sales, Financing and Business Planning.
+              As being in the Mobile Advertising Start-up Space from early on, he has a broad network to
+              introduce you to the right people and knows the Do’s and Don’ts to build companies from early
+              on. Besides work, he is a fan of good Gin, esp. Negroni and loves playing guitar.
+            </p>
+          </li>
+          <li class="info hidden" id="bs">
+            <h2>Benjamin Schönburg</h2>
+            <p>
+              Benjamin is a futurist, hobby investor and blockchain enthusiast. Currently, he is
+              working as a software developer at LiquidM, a Berlin based Ad-Tech company. He studied
+              computer science at Freie Universität Berlin and brings 7+ years of academic and
+              professional tech experience to Veto Capital. He worked for companies in all phases of
+              the start-up life cycle and helps founders avoid common and uncommon mistakes when
+              incorporating their company. Besides being a software developer by day, he mostly also
+              is one by night with only small breaks for his second favourite hobby - eating.
+            </p>
+          </li>
+        </ol>
+        <i class="fa fa-chevron-right" onclick="step(1)"></i>
+      </div>
+
+    </div>
+    <div class="impressum">
+      Thomas Hille - Weisestraße 24 12049 Berlin <br>
+      <a href="mailto:info@veto-capital.com?Subject=web%20request" target="_top">
+        info@veto-capital.com
+      </a>
+    </div>
+  </body>
+</html>

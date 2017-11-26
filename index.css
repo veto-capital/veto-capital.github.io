@@ -1,0 +1,211 @@
+@import url("assets/blink.css");
+
+@font-face {
+  font-family: "source sans pro";
+  font-weight: 300;
+  src: url("fonts/SourceSansPro-Light.ttf");
+}
+
+@font-face {
+  font-family: "source sans pro";
+  font-weight: 400;
+  src: url("fonts/SourceSansPro-Regular.ttf");
+}
+
+@keyframes float {
+  0% { transform: translatey(0px) }
+  50% { transform: translatey(-10px) }
+  100% { transform: translatey(0px) }
+}
+
+body {
+  font-family: "source sans pro";
+  font-size: 30px;
+  font-weight: 300;
+  background: #f3f3f3;
+
+  margin: 0;
+}
+
+a { color: black }
+h2 { font-weight: 400; }
+
+.logo {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo img {
+  max-width: 90%;
+}
+
+.logo .scroller {
+  color: #636363;
+  cursor: pointer;
+  position: absolute;
+  font-size: 50px;
+  bottom: 0;
+  padding: 1em 2em;
+  padding-bottom: 10px;
+  animation: float 1.5s ease-in-out infinite;
+}
+
+.teaser {
+  height: calc(100vh - 80px);
+  width: 100%;
+  display: flex;
+  background: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about {
+  padding: 3em 20%;
+  font-size: 23px;
+  font-weight: 300;
+  text-align: center;
+  background: white;
+}
+
+.team {
+  padding: 3em 15%;
+  box-sizing: border-box;
+  font-size: 23px;
+  font-weight: 300;
+  text-align: center;
+  background: #f3f3f3;
+}
+
+ol {
+  font-size: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.infos {
+  display: flex;
+  margin-top: 3em;
+  justify-content: space-between;
+}
+
+.fa-chevron-right, .fa-chevron-left {
+  cursor: pointer;
+  align-self: center;
+  font-size: 45px !important;
+  color: #636363;
+  padding: 45px;
+  margin-top: 100px;
+  vertical-align: top;
+  transition: all .1s;
+}
+
+.fa-chevron-right:hover, .fa-chevron-left:hover {
+  font-size: 65px !important;
+  padding: calc(45px - 7px);
+  padding-bottom: calc(45px - 20px);
+  margin-top: 90px;
+}
+
+.fa-chevron-right:active, .fa-chevron-left:active {
+  color: black;
+}
+
+.infos ol {
+  width: 100%;
+  position: relative;
+}
+.info {
+  font-size: 23px;
+  position: absolute;
+  transition: all .6s .1s;
+  opacity: 1;
+}
+
+.info.hidden {
+  opacity: 0;
+  transition: all .3s;
+}
+
+.member {
+  font-size: 0;
+  width: 20%;
+  display: inline-block;
+  position: relative;
+}
+
+.overlay {
+  top: 0;
+  left: 5%;
+  width: 90%;
+  height: 100%;
+  background: black;
+  pointer-events: none;
+  position: absolute;
+  transition: all 0.3s;
+  opacity: .0;
+}
+
+.member label {
+  pointer-events: none;
+  transition: all 0.3s;
+  font-size: 0px;
+  position: absolute;
+  left: 5%;
+  color: white;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.fa-linkedin {
+  pointer-events: none;
+  transition: all 0.3s;
+  font-size: 0px !important;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  padding: 10px 10px;
+  color: white;
+}
+
+.member:hover .overlay{ opacity: .7 }
+.member:hover label { font-size: 20px }
+.member:hover .fa-linkedin { font-size: 45px !important }
+
+.member img {
+  width: 90%;
+  height: 90%;
+}
+
+#indicator {
+  background: #636363;
+  height: 7px;
+  width: 20%;
+  border-radius: 7px;
+  margin-top: 10px;
+  margin-left: 0%;
+  transition: all 0.3s;
+}
+
+#indicator.m0 { margin-left:  0% }
+#indicator.m1 { margin-left: 20% }
+#indicator.m2 { margin-left: 40% }
+#indicator.m3 { margin-left: 60% }
+#indicator.m4 { margin-left: 80% }
+
+.impressum {
+  height: 80px;
+  background: #f3f3f3;
+  background: white;
+  font-size: 15px;
+  text-align: center;
+  padding-top: calc(40px - 1em);
+  box-sizing: border-box;
+}
