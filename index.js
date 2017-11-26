@@ -3,7 +3,7 @@ let index = 0;
 
 function step(n) {
   index = (index + n) % members.length;
-  if (index === -1) id = members.length - 1;
+  if (index < 0) index = members.length - 1;
   switchTo(index);
 }
 
