@@ -43,3 +43,23 @@
   }
 }
 
+@media (max-height: 1780px) {
+  .upper.brow { height: calc(50% + 2.2vh); }
+  .lower.brow { top: calc(50% + 6.7vh); }
+  .lid {
+    left: calc(50% + 3vh);
+    margin-left: 0;
+    width: 6.5vh;
+    border-bottom-right-radius: 3vh;
+  }
+  .eye {
+    left: calc(50% + 3vh);
+    margin-left: 0;
+    border-top-left-radius: 4vh;
+    width: 6.5vh;
+  }
+}
+
+@media (max-height: 980px) {
+  .lower.brow { top: calc(50% + 7.1vh); }
+}

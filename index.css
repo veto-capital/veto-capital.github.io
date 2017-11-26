@@ -43,6 +43,7 @@ h2 { font-weight: 400; }
 
 .logo img {
   max-width: 90%;
+  max-height: 70%;
 }
 
 .logo .scroller {
