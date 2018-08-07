@@ -27,7 +27,7 @@ body {
   margin: 0;
 }
 
-a { color: black }
+a { color: transparent }
 h2 { font-weight: 400; }
 
 .logo {
