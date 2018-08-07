@@ -68,12 +68,92 @@ h2 { font-weight: 400; }
   text-align: center;
 }
 
-.about {
+.about, .portfolio {
   padding: 3em 20%;
   font-size: 23px;
   font-weight: 300;
   text-align: center;
   background: white;
+}
+
+.portfolio .gallery .wrapper {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 140px;
+  vertical-align: top;
+  margin: 10px;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+  background: white;
+  transition: all .2s;
+  box-sizing: border-box;
+  border-top: 1px solid white;
+}
+
+.portfolio .gallery .helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.portfolio .gallery img {
+  filter: grayscale(100%) contrast(1);
+  vertical-align: middle;
+  width: 70%;
+  height: auto;
+  max-height: 80%;
+  transition: all .1s;
+}
+
+.portfolio .gallery .wrapper:hover {
+  transform: translateY(-4px);
+  border-top: 1px solid #f3f3f3;
+  box-shadow: 0px 10px 20px 0px #0000001f;
+  border-radius: 10px;
+}
+
+.zest img {
+  fill: blue;
+}
+
+
+//.portfolio .gallery .wrapper .exit {
+//  position: absolute;
+//  left: 10px;
+//  top: 10px;
+//  z-index: 10;
+//  transform: rotate(-30deg);
+//}
+//
+//.portfolio .gallery .wrapper:hover .exit {
+//  color: darkgreen;
+//  background-color: rgb(227,249,227);
+//  border-color: darkgreen;
+//}
+//
+//.exit {
+//  height: 50px;
+//  line-height: 50px;
+//  width: 50px;
+//  background-color: #f3f3f3;
+//  background-color: #636363;
+//  border-radius: 50%;
+//  display: inline-block;
+//  text-align: center;
+//  border: 2px solid #535353;
+//  transition: all .2s;
+//  font-weight: normal;
+//  color: #636363;
+//  color: white;
+//}
+//.exit::after {
+//  content: 'exit';
+//}
+
+.portfolio .gallery .wrapper:hover img {
+  filter: none;
 }
 
 .team {
@@ -204,7 +284,6 @@ ol {
 .impressum {
   height: 80px;
   background: #f3f3f3;
-  background: white;
   font-size: 15px;
   text-align: center;
   padding-top: calc(40px - 1em);
