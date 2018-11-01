@@ -264,3 +264,8 @@ ol {
   padding-top: calc(40px - 1em);
   box-sizing: border-box;
 }
+
+.impressum a {
+    color: inherit;
+    text-decoration: none;
+}
