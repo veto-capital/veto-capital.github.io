@@ -69,11 +69,19 @@ h2 { font-weight: 400; }
 }
 
 .about, .portfolio {
-  padding: 3em 20%;
   font-size: 23px;
   font-weight: 300;
   text-align: center;
   background: white;
+}
+.portfolio {
+  padding: 3em 10%;
+}
+.about {
+  padding: 3em 20%;
+}
+hr {
+  width: 70vw;
 }
 
 .portfolio .gallery .wrapper {
