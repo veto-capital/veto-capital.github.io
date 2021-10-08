@@ -147,7 +147,7 @@ hr {
 }
 
 .portfolio .gallery .wrapper.so-me:hover img:not(.exit) {
-  filter: invert();
+  filter: invert() !important;
 }
 
 .team {
