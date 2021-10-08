@@ -110,6 +110,10 @@ hr {
   filter: grayscale(100%) contrast(1);
 }
 
+.portfolio .gallery .so-me img:not(.exit) {
+  filter: invert() grayscale(100%) contrast(1);
+}
+
 .portfolio .gallery img {
   vertical-align: middle;
   width: 70%;
@@ -138,9 +142,12 @@ hr {
   transform: rotate(-30deg);
 }
 
-
 .portfolio .gallery .wrapper:hover img:not(.exit) {
   filter: none;
+}
+
+.portfolio .gallery .wrapper.so-me:hover img:not(.exit) {
+  filter: invert();
 }
 
 .team {
