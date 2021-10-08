@@ -118,6 +118,10 @@ hr {
   transition: all .1s;
 }
 
+.portfolio .gallery .connected-living img {
+  width: 20%;
+}
+
 .portfolio .gallery .wrapper:hover {
   transform: translateY(-4px);
   border-top: 1px solid #f3f3f3;
