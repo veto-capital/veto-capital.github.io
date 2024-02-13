@@ -114,6 +114,11 @@ hr {
   filter: invert() grayscale(100%) contrast(1);
 }
 
+.portfolio .gallery .mealy img:not(.exit) {
+  width: auto !important;
+  scale: 1.6;
+}
+
 .portfolio .gallery img {
   vertical-align: middle;
   width: 70%;
